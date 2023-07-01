@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #000000;
+}
+
+.scan {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    overflow: hidden;
+}
