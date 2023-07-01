@@ -13,7 +13,7 @@ setInterval(function () {
     else return 8;
   }
   
-  var rds = "...SUPPORT DOPE DEVS...";
+  var rds = "...SUPPORT DOPE DEVS";
   var idx_ini = 0;
   var idx_end =  rds.length;
   
