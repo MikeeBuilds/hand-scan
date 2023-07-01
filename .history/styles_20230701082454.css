@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #111;
+}
+
+.kiosk {
+    width: 600px;
+    height: 600px;
+    border: 10px solid #555;
+    border-radius: 25px;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.scan {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.scan .hand {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background: url(hand_02.png);
+    background-size: 500px;
+}
+
+/* ... rest of your CSS code ... */
+
+@media (min-width: 768px) {
+    .scan .hand {
+        width: 500px;
+        height: 500px;
+    }
+
+    .scan .hand .lines::before,
+    .scan .hand .lines::after {
+        width: 500px;
+        height: 500px;
+    }
+}

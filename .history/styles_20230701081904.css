@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #111;
+}
+
+.kiosk {
+    background: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.scanner-slot {
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.scan {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.scan .hand {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background: url(hand_02.png);
+    background-size: 500px;
+}
+
+/* Other styles remain the same */
+
+.instructions {
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.leds {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.led {
+    width: 10px;
+    height: 10px;
+    background: #f00;
+    border-radius: 50%;
+    margin: 0 5px;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { background: #f00; }
+    50% { background: #0f0; }
+}
+
+@media (min-width: 768px) {
+    .scan .hand {
+        width: 500px;
+        height: 500px;
+    }
+
+    .scan .hand .lines::before,
+    .scan .hand .lines::after {
+        width: 500px;
+        height: 500px;
+    }
+}
